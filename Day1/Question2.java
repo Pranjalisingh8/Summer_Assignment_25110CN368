@@ -1,14 +1,18 @@
-/* WAP to print multiplication table of a given number */
+/* WAP TO PRINT THE MULTIPLICATION OF THE GIVEN NUMBER */
 package Day1;
 import java.util.Scanner;
-public class Question2 {
+public class Question2{
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int n = sc.nextInt();
-        System.out.println("Multiplication table of " + n + ":");
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(n + " x " + i + " = " + (n * i));
-        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the number:");
+        int number = scanner.nextInt();
+    System.out.println("the multiplication table of " + number + " is:");
+    for (int i = 1; i <=10; i++){
+        int result = number * i;
+        System.out.println(number + " x " + i + " = " + result);
+
+
+    }
+    scanner.close();
     }
 }

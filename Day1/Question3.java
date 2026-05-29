@@ -1,15 +1,17 @@
-/* WAP to find factorial of a number */
+/* WAP TO FIND THE FACTORIAL OF A GIVEN NUMBER */
 package Day1;
-import java.util.Scanner;   
+import java.util.Scanner;
 public class Question3 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int n = sc.nextInt();
+    public static void main(String[]args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter number:");
+        int number = scanner.nextInt();
         int factorial = 1;
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= number; i++) {
             factorial *= i;
         }
-        System.out.println("The factorial of " + n + " is: " + factorial);
+        System.out.println("Factorial of " + number + " is: " + factorial);
+        scanner.close();
     }
 }
+
