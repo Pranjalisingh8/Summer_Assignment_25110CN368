@@ -8,7 +8,7 @@ public class Question15 {
         System.out.println("Enter a number:");
         Num = sc.nextInt();
         temp = Num;
-        while (temp != 0) {
+        while (temp > 0) {
             Remainder = temp % 10;
             Result += Math.pow(Remainder, 3);
             temp /= 10;

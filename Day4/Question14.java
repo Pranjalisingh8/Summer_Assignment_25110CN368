@@ -17,7 +17,7 @@ public class Question14 {
                 a = b;
                 b = c;
             }
-            System.out.println("The " + Number + "rd term of the Fibonacci series is: " + b);
+            System.out.println("The " + Number + "th term of the Fibonacci series is: " + b);
         }
         sc.close();}
     }
