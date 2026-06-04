@@ -8,15 +8,15 @@ public class Question15 {
         System.out.println("Enter a number:");
         Num = sc.nextInt();
         temp = Num;
-        while (temp > 0) {
-            Remainder = temp % 10;
+        while (Num > 0) {
+            Remainder = Num % 10;
             Result += Math.pow(Remainder, 3);
-            temp /= 10;
+            Num /= 10;
         }
-        if (Result == Num) {
-            System.out.println(Num + " is an Armstrong number.");
+        if (Result == temp) {
+            System.out.println(temp + " is an Armstrong number.");
         } else {
-            System.out.println(Num + " is not an Armstrong number.");
+            System.out.println(temp + " is not an Armstrong number.");
         }
         sc.close();
     }
