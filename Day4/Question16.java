@@ -11,8 +11,7 @@ public class Question16 {
         Num2 = sc.nextInt();
         System.out.println("Armstrong numbers between "+Num1+" and "+Num2+" are:");
         for (i = Num1; i <= Num2; i++)
-        {
-            count = 0;
+        { count = 0;
             for (j = 1; j <= i; j++)
             {
                 if (i % j == 0)
